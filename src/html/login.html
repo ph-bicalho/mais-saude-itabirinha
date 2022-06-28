@@ -6,15 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <script>
-        const {remote} = require('electron');
+        
     </script>
 </head>
 <body>
-    <form action="GET" method="get">
+    <form>
         <input type="text" name="nome" id="nome" placeholder="Nome">
         <input type="password" name="senha" id="senha" placeholder="Senha">
-        <button type="submit">Enviar</button>
+        <button>Enviar</button>
     </form>
-     <button onclick="remote.getCurrentWindow().close()">Fechar</button>
+     <button onclick="checarLogin()">Fechar</button>
+
+     <script>
+        
+        const {remote} = require('electron');
+        
+
+     function checarLogin(){
+        console.log('clicou')
+        
+
+        // if (login = true){
+        //     remote.getCurrentWindow().close()
+        //     login.close()
+        //     janela.show()
+        // } else{
+        //     alert("login inválido")
+        // }
+    }</script>
 </body>
 </html>

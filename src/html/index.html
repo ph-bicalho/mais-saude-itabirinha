@@ -4,13 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>+ Saúde Itabirinha - Página principal</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <form action="GET" method="get">
-        <input type="text" name="nome" id="nome" placeholder="Nome">
-        <input type="password" name="senha" id="senha">
-        <button type="submit">Enviar</button>
-    </form>
+    <header>
+        <a target="_blank" href="./agenda.html"><button> <i href="../foto.png"></i> Agenda </button></a>
+        <a target="_blank" href="./cadastro.html"><button>Novo Paciente</button></a>
+        <a target="_blank" href="./prontuário.html"><button>Prontuário</button></a>
+        <a target="_blank" href="./financeiro.html"><button>Controle Financeiro</button></a>
+        <a target="_blank" href="./config.html"><button>Configurações</button></a>
+    </header>
+
+    <section id="agendas">
+        <div class="agenda-header">
+        <input type="radio" name="agenda" class="agenda" id="agenda-1" aria-label="Agenda 1" checked aria-checked="true" aria-selected="true">
+        <label class="agenda" for="agenda-1">Agenda 1 </label>
+        </div>
+        <div class="agenda-header">
+        <input type="radio" class="agenda" name="agenda" id="agenda-2">
+        <label for="agenda-2" class="agenda">Agenda 2</label>
+        </div>
+        <div class="agenda-header"> 
+        <input type="radio" class="agenda" name="agenda" id="agenda-3">
+        <label for="agenda-3" class="agenda">Agenda 3</label>
+        </div>
+        <div id="adicionar">
+            <a href="#">adicionar agenda  +</a>
+        </div>
+    </section>
+
+    <section id="barra-direita">
+        <div class="clinica">
+            <div class="clinica-top"> 
+                <img src="../images/placeholder.png" alt="" id="foto-perfil">
+                <h2>Nome da Clínica</h2>
+            </div>
+            <div class="links">
+                <a href="#">Precificação</a>
+                <a href="#">Horário de atendimento</a>
+                <a href="#">Buscar Paciente</a>
+                <a href="#">Configurar agendas</a>
+            </div>
+        </div>
+
+        <div class="notas">
+            <div class="notas-top">
+                <h3>notas</h3>
+            </div>
+            <div class="notas-corpo">
+                <textarea name="notas" id="textarea" cols="30" rows="16"></textarea>
+            </div>
+        </div>
+
+        <div class="footer">
+        <h2>+ Saúde Itabirinha</h2>
+        <p>Itabirinha/MG  |  35280-000</p>
+        
+        <br>
+        <p>Todos os direitos reservados</p>
+        <img src="" alt="Pedro Bicalho">
+        </div>
+    </section>
+
+
+
+
+    <section id="agenda-dia">
+    
+        <img src="../images/layout-teste-saude.png" alt="layout-teste-saude">
+    
+        <div id="calendar"></div>
+      </div>
+    </section>
 </body>
 </html>
