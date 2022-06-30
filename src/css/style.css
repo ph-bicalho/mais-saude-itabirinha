@@ -35,6 +35,7 @@ header a:last-child {
     height: 100%;
     float: left;
     display: flex;
+    justify-content: space-between;
     padding: 5px 0  0  1rem ;
     background-color: #e2e3e9 ;
     border-top: 1px solid #242424;
@@ -80,7 +81,7 @@ header a:last-child {
     height: 90%;
     width: 95%;
     left: 1.1rem;
-    
+    padding-right: 10px;
 }
 .nav-tabs .radio-tab:checked ~ .content{
    display: block;
@@ -88,13 +89,101 @@ header a:last-child {
 
 }
 
-/* -----------------barra da direita---------------- */
+.content .horarios{
+    padding: 20px;
+    height: 94%;
+    
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
 
-#barra-direita{
+.content .horarios .horario-numero{
+    float: left;
+    width: 5%;
+
+}
+
+.content .horarios .horario-numero .h,.content .horarios .horario-barra .b {
+    padding-bottom: 96px ;
+}
+.content .horarios .horario-numero .h{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+
+.content .horarios .horario-agendado{
     float: right;
-    background-color: #E9E2E2;
+    position: relative;
+    width: 95%;
+}
+
+.content .horarios .horario-agendado .barra-vertical{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color:  #7d8ccd;
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+}
+.content .horarios .horario-barra .b{
+    width: 100%;
+    display: flex;
+
+}
+
+.content .horarios .horario-barra .b span{
+    background-color: #b6b6b6;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 2px;
+    z-index: 0;
+    
+}
+
+#agendas #adicionar{
+    text-align: end;
+ 
+    padding: 10px 20px;
+}
+
+
+ /* ----------Scrollbar------------ */
+
+
+.content .horarios::-webkit-scrollbar{
+    width: 10px;
+    display: block !important; 
+   
+    
+}
+.content .horarios::-webkit-scrollbar-track{
+    background: #b6b6b695;
+    border-radius: 10px;
+    margin-block: 8px;
+    margin-left: 10px;
+    
+    
+}
+.content .horarios::-webkit-scrollbar-thumb{
+    background: #7d8ccd;
+    border-radius: 10px;
+}
+
+
+
+
+/* -----------------aba da direita---------------- */
+
+#aba-direita{
+    float: right;
+    background-color: #e2e3e9;
     border: 1px solid black;
     border-right: 0;
+    border-bottom: 0;
     width: 20%;
     min-height: 92vh;
     height: 100%;
@@ -143,7 +232,7 @@ header a:last-child {
 }
 .notas-top{
     padding: 4px 10px ;
-    border:1px  solid black;
+    border-top:1px  solid black;
 }
 textarea{
     width: 100%;
@@ -151,7 +240,7 @@ textarea{
     background-color: #e0e0e0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    border:1px  solid black;
+    border-left: none;
 
     box-sizing: border-box;
 }

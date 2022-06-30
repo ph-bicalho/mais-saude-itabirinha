@@ -6,3 +6,8 @@
 a{
     color: #22b7ce;
 }
+::-webkit-scrollbar{
+    display: none;
+    overflow: hidden;
+    overflow-y: hidden;
+}
