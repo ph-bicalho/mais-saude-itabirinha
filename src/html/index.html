@@ -24,7 +24,17 @@
                     <input type="radio" name="tab" id="agenda-1" class="radio-tab" checked>
                     <label for="agenda-1">Agenda 1</label>
                     <div class="content">
+                        
                         <article class="horarios">
+                            <div class="header">
+                                <div class="dia-semana">
+                                    <h2 id="dia-semana"></h2>
+                                </div>
+                                <div class="dia-m-ano">
+                                    <h2 id="data"></h2>
+                                </div>
+                            </div>
+                            
                            <div class="horario-numero">
                             <div class="h h-1">1:00</div>
                             <div class="h h-2">1:30</div>
@@ -77,6 +87,10 @@
                             
                            </div>
                            <div class="horario-agendado">
+                            <div class="progress-container">
+                                <div class="progress-bars"></div>
+                            </div>
+                            
                             <div class="barra-vertical"></div>
                             <div class="horario-barra">
                                 <div class="b h-1"><span></span></div>
@@ -194,6 +208,8 @@
         <img src="" alt="Pedro Bicalho">
         </div>
     </section>
+
+    <script src="../scripts/horário.js"></script>
 
 </body>
 </html>
