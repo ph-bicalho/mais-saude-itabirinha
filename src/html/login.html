@@ -5,34 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <script>
-        
-    </script>
+    <link rel="stylesheet" href="../css/variáveis.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+  
 </head>
 <body>
-    <form>
-        <input type="text" name="nome" id="nome" placeholder="Nome">
-        <input type="password" name="senha" id="senha" placeholder="Senha">
-        <button>Enviar</button>
+    <header>
+        <a href="#" id="close" onclick="window.close()" >x</a>
+        <img src="../images/icon.png" alt="icone" id="icone">
+        <h2>+ Saúde Itabirinha</h2>
+    </header>
+
+
+    <form action="">
+        <label for="nome">Usuário</label>
+        <input type="text" class="input" name="nome" id="nome" placeholder="Nome" required>
+        <label for="senha"> Senha</label>
+        <input type="password" class="input" name="senha" id="pass" placeholder="Senha" required>
+        <button type="submit" id="entrar-btn">Entrar</button>
     </form>
-     <button onclick="checarLogin()">Fechar</button>
 
-     <script>
-        
-        const {remote} = require('electron');
-        
-
-     function checarLogin(){
-        console.log('clicou')
-        
-
-        // if (login = true){
-        //     remote.getCurrentWindow().close()
-        //     login.close()
-        //     janela.show()
-        // } else{
-        //     alert("login inválido")
-        // }
-    }</script>
+    <script src="../scripts/login.js"></script>
+    
 </body>
 </html>

@@ -1,5 +1,5 @@
 const {app, BrowserWindow} = require('electron');
-    const appIcon = __dirname+"/icon.png"
+    const appIcon = __dirname+"./src/images/icon.png"
     let login = null;
     let janela = null;
     
@@ -15,6 +15,7 @@ app.on('ready', () => {
         icon: appIcon ,
         modal: true,
         resizable: false,
+        frame:false,
         width: 400,
         height: 450,
     });
