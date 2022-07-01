@@ -20,9 +20,9 @@
 
     <form action="">
         <label for="nome">Usuário</label>
-        <input type="text" class="input" name="nome" id="nome" placeholder="Nome" required>
+        <input type="text" class="input" name="nome" id="nome" placeholder="Nome" required onchange="atualizarInput()">
         <label for="senha"> Senha</label>
-        <input type="password" class="input" name="senha" id="pass" placeholder="Senha" required>
+        <input type="password" class="input" name="senha" id="pass" placeholder="Senha" required onchange="atualizarInput()">
         <button type="submit" id="entrar-btn">Entrar</button>
     </form>
 
