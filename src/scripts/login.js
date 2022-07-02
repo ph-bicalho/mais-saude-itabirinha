@@ -1,8 +1,14 @@
+
+
+const link = document.getElementById('link-btn')
 const button = document.getElementById('entrar-btn');
 const user = document.getElementById('nome')
 const pass = document.getElementById('pass')
 
-const userList = [{usuario: "admin", senha: "ssss"}, ]
+
+const userList = [{usuario: "admin", senha: "ssss"}, {usuario: "user2", senha:"dddd"} ]
+
+let loginAuth = false;
 
 let userValid = {
     nome: '',
@@ -44,15 +50,20 @@ button.addEventListener('click', (event) => {
             senha: item.senha,
         }
     } else{
-
+        userValid = {
+            nome:'',
+            senha:'',
+        }
     }
 })
 
     if(user.value == userValid.nome && pass.value == userValid.senha){
-        alert('deu certo')
+        loginAuth = true;
+        window.close()
+        
     }else{
         user.classList.add('erro-input') ;
-        pass.classList.add('erro-input');
-        alert('Usuário ou senha inválidos'); 
+        pass.classList.add('erro-input'); 
+        console.log('usuario ou senha incorretos.')
     }
 })}
