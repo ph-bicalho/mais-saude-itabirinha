@@ -2,7 +2,7 @@ const {app, BrowserWindow} = require('electron');
     const appIcon = __dirname+"./src/images/icon.png"
     let login = null;
     let janela = null;
-    let {loginAuth} = require('./src/scripts/login.js')
+
     
 app.on('ready', () => {
    
@@ -24,11 +24,14 @@ app.on('ready', () => {
     
     
         login.addListener('closed', () => {
-            if(loginAuth === true){
-                janela.maximize()
-            } else{
-                janela.close()
-            }
+            janela.maximize()
+
+            
+            // if(loginAuth === true){
+            //     janela.maximize()
+            // } else{
+            //     janela.close()
+            // }
             
             
         })        
